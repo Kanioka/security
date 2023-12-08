@@ -26,4 +26,6 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 
 ]
- grails.plugin.springsecurity.logout.postOnly = false// pour autoriser le logaut
+grails.plugin.springsecurity.logout.postOnly = false// pour autoriser le logaut
+grails.plugin.springsecurity.successHandler.defaultTargetUrl ="/product"
+grails.plugin.springsecurity.logout.afterLogoutUrl="/product"

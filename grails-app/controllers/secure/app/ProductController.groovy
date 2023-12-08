@@ -3,8 +3,8 @@ package secure.app
 import grails.plugin.springsecurity.annotation.Secured
 import grails.validation.ValidationException
 import static org.springframework.http.HttpStatus.*
-//@Secured('permitAll') autoriser all
-@Secured(["ROLE_ADMIN", "ROLE_USER"])
+@Secured('permitAll')
+//@Secured(["ROLE_ADMIN", "ROLE_USER"])
 class ProductController {
 
     ProductService productService
